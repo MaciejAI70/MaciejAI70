@@ -1,0 +1,3 @@
+[submodule "Vigil-Guard"]
+	path = Vigil-Guard
+	url = https://github.com/tbartel74/Vigil-Guard.git

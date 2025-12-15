@@ -22,6 +22,7 @@ MaciejAI70/
 │   │   ├── lesson_2_first_skill()     # Lekcja 2: Pierwszy skill
 │   │   ├── lesson_3_calculator()      # Lekcja 3: Skills z parametrami
 │   │   ├── lesson_4_advanced()        # Lekcja 4: Zaawansowane
+│   │   ├── lesson_5_language_learning() # Lekcja 5: Nauka języków
 │   │   ├── show_documentation()       # Dokumentacja
 │   │   ├── test_skills()              # Narzędzia testowe
 │   │   └── show_help()                # System pomocy
@@ -37,14 +38,19 @@ MaciejAI70/
 │   │   ├── hello-skill-example.md     # Najprostszy przykład
 │   │   └── task-helper-example.md     # Skill z funkcjami
 │   │
-│   └── advanced/                      # Zaawansowane
-│       └── code-reviewer-example.md   # Profesjonalny skill
+│   ├── advanced/                      # Zaawansowane
+│   │   └── code-reviewer-example.md   # Profesjonalny skill
+│   │
+│   └── languages/                     # Language learning skills
+│       ├── spanish-teacher-a2.md      # Nauczyciel hiszpańskiego A2
+│       └── english-teacher-a2.md      # Nauczyciel angielskiego A2
 │
 ├── lessons/                           # 📖 Materiały szkoleniowe
 │   ├── 01-introduction.md             # Teoria: Czym są skills?
 │   ├── 02-first-skill.md              # Praktyka: Pierwszy skill
 │   ├── 03-advanced-skills.md          # Zaawansowane techniki
-│   └── 04-testing.md                  # Testowanie i debugging
+│   ├── 04-testing.md                  # Testowanie i debugging
+│   └── 05-language-learning.md        # Language learning skills
 │
 ├── templates/                         # 📋 Szablony
 │   ├── skill-template-basic.md        # Szablon dla prostych skills
@@ -87,6 +93,9 @@ Start
          │                          │
          ├─► Lekcja 4: Advanced     │
          │   (Profesjonalny skill)  │
+         │                          │
+         ├─► Lekcja 5: Languages    │
+         │   (Nauczyciele języków)  │
          │                          │
          ├─► Documentation          │
          │   • Linki do zasobów     │

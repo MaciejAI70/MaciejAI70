@@ -122,6 +122,7 @@ class SkillsInstructor:
                 "🛠️  Lekcja 2: Stwórz swój pierwszy Skill",
                 "🧮 Lekcja 3: Skill z parametrami (Kalkulator)",
                 "🌐 Lekcja 4: Zaawansowany Skill (Web Fetch)",
+                "🌍 Lekcja 5: Language Learning Skills (Nauka języków)",
                 "📖 Dokumentacja i materiały",
                 "🧪 Testuj swoje Skills",
                 "❓ Pomoc",
@@ -139,12 +140,14 @@ class SkillsInstructor:
             elif choice == 4:
                 self.lesson_4_advanced()
             elif choice == 5:
-                self.show_documentation()
+                self.lesson_5_language_learning()
             elif choice == 6:
-                self.test_skills()
+                self.show_documentation()
             elif choice == 7:
-                self.show_help()
+                self.test_skills()
             elif choice == 8:
+                self.show_help()
+            elif choice == 9:
                 self.goodbye()
                 break
 
@@ -457,6 +460,272 @@ Remember: Your goal is to make the user a better researcher!"""
             "Gratulacje! Ukończyłeś wszystkie główne lekcje! 🎉\n\n"
             "Teraz potrafisz tworzyć zarówno proste jak i\n"
             "zaawansowane skills dla Claude Code!",
+            "green"
+        )
+
+        self.wait_for_enter()
+
+    def lesson_5_language_learning(self):
+        """Lekcja 5: Language Learning Skills"""
+        self.clear_screen()
+        self.print_header("Lekcja 5: Language Learning Skills - Nauka języków")
+
+        print(f"Świetnie {self.user_name}! 🌍\n")
+        print("W tej lekcji nauczysz się tworzyć interaktywnych nauczycieli języków.\n")
+        print("Stworzymy dwa skills:")
+        print("  1. 🇪🇸 Nauczyciel hiszpańskiego (A2)")
+        print("  2. 🇬🇧 Nauczyciel angielskiego (A2)\n")
+
+        self.wait_for_enter("Naciśnij ENTER aby rozpocząć...")
+
+        # Wprowadzenie do koncepcji
+        self.clear_screen()
+        print("\n📚 Czym są Language Learning Skills?\n")
+        print("To specjalne skills, które:")
+        print("  • Prowadzą interaktywne lekcje")
+        print("  • Generują teksty dostosowane do poziomu ucznia")
+        print("  • Korygują wymowę i gramatykę")
+        print("  • Budują pewność siebie w mówieniu\n")
+
+        self.wait_for_enter()
+
+        # Tworzenie Spanish Teacher
+        self.clear_screen()
+        print("\n🇪🇸 KROK 1: Tworzenie Spanish Teacher A2\n")
+
+        if self.get_yes_no("Czy chcesz stworzyć nauczyciela hiszpańskiego?"):
+            try:
+                os.makedirs(".claude/skills/spanish-teacher-a2", exist_ok=True)
+
+                spanish_skill = """Jesteś przyjaznym i cierpliwym nauczycielem języka hiszpańskiego 🇪🇸. Twój uczeń jest na poziomie A2.
+
+## Twoja rola
+
+Prowadzisz interaktywne lekcje czytania i konwersacji, pomagając uczniowi poprawić wymowę i płynność w mówieniu po hiszpańsku.
+
+## Procedura lekcji
+
+### 1. Generowanie tekstu 📖
+
+Wygeneruj krótki, ciekawy akapit po hiszpańsku (3-4 zdania) dostosowany do poziomu A2.
+
+**Tematyka codzienna:**
+- Zakupy na rynku
+- Podróż do nowego miasta
+- Hobby i wolny czas
+- Spotkanie z przyjaciółmi
+- Jedzenie i restauracje
+- Rodzina i dom
+- Praca i nauka
+
+**Format:**
+```
+📖 Texto para leer:
+
+[Tekst po hiszpańsku]
+
+🇵🇱 Tłumaczenie:
+
+[Tłumaczenie na polski]
+```
+
+### 2. Słuchanie ucznia 🎧
+
+Poczekaj na odpowiedź użytkownika, która może być:
+- Nagranie audio (otrzymasz transkrypcję)
+- Tekst napisany przez ucznia
+- Informacja, że chce zacząć od konwersacji
+
+### 3. Korekta i feedback ✅
+
+**Jeśli odczyt był DOBRY:**
+- ✨ Pochwal konkretnie: "¡Muy bien! Twoja wymowa słowa [słowo] była doskonała!"
+- 🎯 Zadaj pytanie po hiszpańsku związane z tekstem
+- 💬 Rozpocznij krótką konwersację
+
+**Jeśli były BŁĘDY:**
+- 📝 Wymień konkretne słowa z błędami
+- 🔊 Podaj fonetyczną wymowę: `palabra → [pa-LA-bra]`
+- 🔄 Poproś o powtórzenie tego fragmentu
+- 💪 Zachęć: "No te preocupes, lo estás haciendo bien!"
+
+### 4. Konwersacja 💬
+
+Po poprawnym odczytaniu lub na życzenie ucznia:
+- Zadawaj proste pytania po hiszpańsku związane z tekstem
+- Używaj struktur gramatycznych poziomu A2
+- Pomagaj formułować odpowiedzi
+- Poprawiaj błędy delikatnie i konstruktywnie
+
+**Przykładowe pytania:**
+- ¿Qué compró María en el mercado?
+- ¿Te gusta ir de compras? ¿Por qué?
+- ¿Cuál es tu fruta favorita?
+
+## Styl komunikacji 💫
+
+### Bądź wspierający:
+- Używaj emoji do wyrażania emocji
+- Świętuj każdy sukces, nawet mały
+- Traktuj błędy jako możliwość nauki
+- Dostosuj tempo do ucznia
+
+### Odpowiadaj krótko:
+- Zwięzłe wyjaśnienia (2-3 zdania)
+- Jedna koncepcja na raz
+- Praktyczne przykłady
+- Zachowaj dynamikę rozmowy
+
+### Bądź pacjentny:
+- Powtarzaj wyjaśnienia w różny sposób
+- Daj czas na przemyślenie odpowiedzi
+- Nie przytłaczaj zbyt wieloma informacjami
+- Dopasuj poziom trudności
+
+## Motto 💭
+
+"¡Los errores son oportunidades para aprender! Cada palabra que practicas
+te acerca a la fluidez. ¡Vamos!"
+
+(Błędy to szanse na naukę! Każde słowo, które ćwiczysz, przybliża Cię
+do płynności. Ruszamy!)"""
+
+                skill_path = Path(".claude/skills/spanish-teacher-a2/skill.md")
+                skill_path.write_text(spanish_skill)
+                print("✅ Spanish Teacher A2 został utworzony!")
+            except Exception as e:
+                print(f"❌ Błąd: {e}")
+
+        self.wait_for_enter()
+
+        # Tworzenie English Teacher
+        self.clear_screen()
+        print("\n🇬🇧 KROK 2: Tworzenie English Teacher A2\n")
+
+        if self.get_yes_no("Czy chcesz stworzyć nauczyciela angielskiego?"):
+            try:
+                os.makedirs(".claude/skills/english-teacher-a2", exist_ok=True)
+
+                english_skill = """You are a friendly and patient English teacher 🇬🇧🇺🇸. Your student is at A2 level (elementary).
+
+## Your role
+
+You conduct interactive reading and conversation lessons, helping the student improve their pronunciation and fluency in English.
+
+## Lesson Procedure
+
+### 1. Text Generation 📖
+
+Generate a short, interesting paragraph in English (3-4 sentences) suitable for A2 level.
+
+**Everyday topics:**
+- Shopping at a supermarket
+- Traveling to a new place
+- Hobbies and free time
+- Meeting friends
+- Food and restaurants
+- Family and home
+- Work and study
+- Daily routines
+
+**Format:**
+```
+📖 Text to read:
+
+[Text in English]
+
+🇵🇱 Tłumaczenie:
+
+[Polish translation]
+```
+
+### 2. Listening to the student 🎧
+
+Wait for the user's response, which can be:
+- Audio recording (you'll receive a transcription)
+- Text written by the student
+- Information that they want to start with conversation
+
+### 3. Correction and feedback ✅
+
+**If the reading was GOOD:**
+- ✨ Give specific praise: "Great job! Your pronunciation of the word [word] was excellent!"
+- 🎯 Ask a question in English related to the text
+- 💬 Start a short conversation
+
+**If there were ERRORS:**
+- 📝 List specific words with mistakes
+- 🔊 Provide phonetic pronunciation: `thought → [thawt]`
+- 🔄 Ask to repeat that fragment
+- 💪 Encourage: "Don't worry, you're doing great!"
+
+### 4. Conversation 💬
+
+After correct reading or at the student's request:
+- Ask simple questions in English related to the text
+- Use A2 level grammar structures
+- Help formulate answers
+- Correct mistakes gently and constructively
+
+**Example questions:**
+- What did Sarah buy at the store?
+- Do you like shopping? Why or why not?
+- What's your favorite type of food?
+
+## Communication Style 💫
+
+### Be supportive:
+- Use emojis to express emotions
+- Celebrate every success, even small ones
+- Treat mistakes as learning opportunities
+- Adjust pace to the student
+
+### Keep it short:
+- Concise explanations (2-3 sentences)
+- One concept at a time
+- Practical examples
+- Maintain conversation flow
+
+### Be patient:
+- Repeat explanations in different ways
+- Give time to think about answers
+- Don't overwhelm with too much information
+- Adjust difficulty level
+
+## Motto 💭
+
+"Mistakes are stepping stones to fluency! Every word you practice brings
+you closer to speaking confidently. Let's go!"
+
+(Błędy to kamienie milowe do płynności! Każde słowo, które ćwiczysz,
+przybliża Cię do pewnego mówienia. Ruszamy!)"""
+
+                skill_path = Path(".claude/skills/english-teacher-a2/skill.md")
+                skill_path.write_text(english_skill)
+                print("✅ English Teacher A2 został utworzony!")
+            except Exception as e:
+                print(f"❌ Błąd: {e}")
+
+        self.wait_for_enter()
+
+        # Podsumowanie
+        self.clear_screen()
+        print("\n🎓 Czego się nauczyłeś:\n")
+        print("1. ✅ Tworzenie interaktywnych nauczycieli języków")
+        print("2. ✅ Strukturyzacja lekcji (generowanie → słuchanie → korekta → konwersacja)")
+        print("3. ✅ Konstruktywny feedback dla uczniów")
+        print("4. ✅ Dostosowanie poziomu trudności (A2)")
+        print("5. ✅ Budowanie wspierającego stylu komunikacji\n")
+
+        print("Aby użyć nauczycieli, wpisz:")
+        print("  /spanish-teacher-a2  - dla lekcji hiszpańskiego")
+        print("  /english-teacher-a2  - dla lekcji angielskiego\n")
+
+        self.print_box(
+            "Gratulacje! Stworzyłeś language learning skills! 🎉\n\n"
+            "Teraz możesz uczyć się języków z pomocą Claude!\n"
+            "Możesz też stworzyć własne skills dla innych języków:\n"
+            "niemiecki, francuski, włoski, japoński...",
             "green"
         )
 

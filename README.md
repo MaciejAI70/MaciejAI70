@@ -25,7 +25,8 @@ MaciejAI70/
 ├── skills-instructor.py       # Główny interaktywny instruktor
 ├── skills/                    # Przykładowe skills do nauki
 │   ├── beginner/              # Skills dla początkujących
-│   └── advanced/              # Zaawansowane przykłady
+│   ├── advanced/              # Zaawansowane przykłady
+│   └── languages/             # Language learning skills
 ├── lessons/                   # Materiały szkoleniowe
 ├── templates/                 # Szablony do tworzenia skills
 └── .claude/                   # Katalog Claude Code (utworzysz go w trakcie)
@@ -37,7 +38,8 @@ MaciejAI70/
 2. **Twój pierwszy skill** - stworzenie prostego "Hello World" skill
 3. **Kalkulator** - skill z parametrami i logiką
 4. **Web Fetch** - zaawansowany skill z zewnętrznymi API
-5. **Best Practices** - jak pisać czyste i użyteczne skills
+5. **Language Learning** - interaktywni nauczyciele języków (hiszpański, angielski)
+6. **Best Practices** - jak pisać czyste i użyteczne skills
 
 ## Wymagania
 
